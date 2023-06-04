@@ -23,5 +23,24 @@ body {
 
 .container {
   max-width: 1240px;
-  margin:auto;
+  margin: auto;
+}
+
+.btn {
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  background-color: #F4CE14;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight:500;
+  font-family: 'Karla';
+  text-align: center;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(4px);
+  border-bottom:none;
 }
