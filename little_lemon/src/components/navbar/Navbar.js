@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from './Logo'
+import Logo from '../Logo'
 import {HiMenu} from 'react-icons/hi'
 import{CgClose} from 'react-icons/cg'
 import './Navbar.css'
