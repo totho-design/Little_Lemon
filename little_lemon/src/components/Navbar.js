@@ -1,23 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from './Logo'
-import HamburgerIcon from './HamburgerIcon'
-
+import {HiMenu} from 'react-icons/hi'
+import{CgClose} from 'react-icons/cg'
 import './Navbar.css'
 
 const Navbar = () => {
+
+    const[click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
   return (
     <div className='navbar'>
         <div className='container'>
-            <h1><span><Logo />Little</span>Lemon</h1>
-            <button className='btn'>Sign In</button>
-            <ul className='nav-menu'>
+            <h1><span><Logo className='logo'/></span></h1>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li><a href='/'>Home</a></li>
-                <li><a href='/'>Search</a></li>
                 <li><a href='/'>About</a></li>
-                <li><a href='/'>Contact</a></li>
+                <li><a href='/'>Menu</a></li>
+                <li><a href='/'>Reservation</a></li>
+                <li><a href='/'>Order Online</a></li>
+                <li><a href='/'>Log In</a></li>
             </ul>
-            <div className='hamburger'>
-                <HamburgerIcon />
+            <div className='hamburger' onClick={handleClick}>
+                {click ? (<CgClose className='icon' />) : (<HiMenu className='icon' />)}
 
             </div>
         </div>
