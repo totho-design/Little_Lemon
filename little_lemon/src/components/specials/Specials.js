@@ -6,39 +6,43 @@ import Dessert from '../../assets/dessert.png'
 
 import './Specials.css'
 
-const Best = () => {
+const Specials = () => {
   return (
     <div className='specials'>
       <div className='headline'>
         <h1>This Week Specials!</h1>
-        <button className='btn'>Order Online</button>
+        <button className='btn ordr'>Order Online</button>
       </div>
-        <div className='container'>
-            <img src={Salad} alt='' />
-            <img src={Bruschetta} alt='' />
-            <img src={Dessert} alt='' />
-        </div>
         <div className='description'>
           <div className='card'>
-            <div className='span'>
-              <h3>Greek Salad</h3>
-              <span className='price'>$ 12.99</span>
+            <div>
+              <img src={Salad} className='dish' alt='' />
+              <div className='span'>
+                <h3>Greek Salad</h3>
+                <span className='price'>$ 12.99</span>
+              </div>
             </div>
             <p>The famous greek salad of crispy lettuce, peppers olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
             <button className='dlvr'>Order Delivery</button>
           </div>
           <div className='card'>
-            <div className='span'>
-              <h3>Bruschetta</h3>
-              <span className='price'>$ 5.99</span>
+            <div>
+              <img src={Bruschetta} className='dish' alt='' />
+              <div className='span'>
+                <h3>Bruschetta</h3>
+                <span className='price'>$ 5.99</span>
+              </div>
             </div>
             <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
             <button className='dlvr'>Order Delivery</button>
           </div>
           <div className='card'>
-            <div className='span'>
-              <h3>Lemon Dessert</h3>
-              <span className='price'>$ 5.00</span>
+            <div>
+              <img src={Dessert} className='dish' alt='' />
+              <div className='span'>
+                <h3>Lemon Dessert</h3>
+                <span className='price'>$ 5.00</span>
+              </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <button className='dlvr'>Order Delivery</button>
@@ -48,4 +52,4 @@ const Best = () => {
   )
 }
 
-export default Best
+export default Specials

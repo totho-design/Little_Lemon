@@ -7,8 +7,10 @@
 
 .specials .headline {
     display: flex;
+    max-width: 1024px;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
 }
 
 h1 {
@@ -25,12 +27,13 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2rem;
-    padding: 1rem;
 }
 
 .specials img {
     width: 100%;
-    height: 20vh;
+    height: auto;
+    float: none;
+    padding-bottom: 2rem;
 }
 
 .description {
@@ -60,6 +63,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    max-width: 1024px;
 }
 p {
     font-family: 'Karla', sans-serif;
@@ -69,7 +73,9 @@ p {
     text-align: left;
     padding: 1rem;
 }
-
+.ordr {
+    margin-right: 2%;
+}
 .dlvr {
     color: #333333;
     padding:1rem;
@@ -78,7 +84,7 @@ p {
     font-size: 1.3331rem;
     font-weight:700;
     font-family: 'Karla',sans-serif;
-    text-align: left;
+    text-align: center;
     transition: .4s;
     cursor: pointer;
   }
@@ -95,18 +101,55 @@ p {
 
 @media screen and (max-width:940px) {
     .specials {
-        margin: 1rem 0;
+        margin: 2rem;
+        width: 100%;
+        margin-bottom: 6rem;
     }
 
-    .specials > div p {
-        margin: 1rem;
+    .description {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .headline {
+        margin-left: 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
         font-size: 1rem;
     }
 
-    .specials .container {
-        grid-template-columns: 1fr;
-        grid-gap: .5rem;
+    .price {
+        font-size: 1.25rem;
     }
+
+    .ordr {
+        margin-right: 6%;
+    }
+
+    .span {
+        margin-right: 1rem;
+    }
+
+    .dlvr {
+        white-space: nowrap;
+        font-size: 1.2rem;
+    }
+
+    .specials img {
+        width: 100%;
+        height: auto;
+        padding-right: 2rem;
+        margin-top: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 478px) {
