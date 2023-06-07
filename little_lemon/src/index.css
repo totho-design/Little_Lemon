@@ -34,7 +34,7 @@ body {
   border-radius: 16px;
   font-size: 1rem;
   font-weight:700;
-  font-family: 'Karla';
+  font-family: 'Karla', sans-serif;
   text-align: center;
   transition: .4s;
   cursor: pointer;
