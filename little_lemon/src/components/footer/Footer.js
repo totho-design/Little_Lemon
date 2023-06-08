@@ -1,46 +1,39 @@
 import React from 'react'
 
 import {FaFacebook, FaInstagram, FaTwitter, FaPinterest} from 'react-icons/fa'
+import Logo from '../Logo'
 
 import './Footer.css'
 
 const Footer = () => {
   return (
     <div className='footer'>
-        <div className='social'>
-            <FaFacebook className='icon' />
-            <FaInstagram className='icon' />
-            <FaTwitter className='icon' />
-            <FaPinterest className='icon' />
-        </div>
         <div className='container'>
             <div className='col'>
-                <h3>About</h3>
-                <p>Company</p>
-                <p>Details</p>
-                <p>Planning</p>
-                <p>About Us</p>
+                <Logo  className='logo' />
             </div>
             <div className='col'>
-                <h3>Comapny</h3>
-                <p>Company</p>
-                <p>Details</p>
-                <p>Planning</p>
-                <p>About Us</p>
+                <h3>Navigation</h3>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Reservations</p>
+                <p>Order Online</p>
+                <p>Login</p>
             </div>
             <div className='col'>
-                <h3>Legal</h3>
-                <p>Company</p>
-                <p>Details</p>
-                <p>Planning</p>
-                <p>About Us</p>
+                <h3>Contact</h3>
+                <p>Address</p>
+                <p>Phone number</p>
+                <p>Email</p>
             </div>
             <div className='col'>
-                <h3>Information</h3>
-                <p>Company</p>
-                <p>Details</p>
-                <p>Planning</p>
-                <p>About Us</p>
+                <div className='social'>
+                    <FaFacebook className='icon' />
+                    <FaInstagram className='icon' />
+                    <FaTwitter className='icon' />
+                    <FaPinterest className='icon' />
+                </div>
             </div>
         </div>
     </div>

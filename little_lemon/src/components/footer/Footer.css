@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     padding: 2rem 0;
-    background-color: #f8f8f8;
+    background-color: #edefee;
 }
 
 .footer .container {
@@ -11,25 +11,31 @@
 }
 
 .footer .col {
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .footer h3 {
     margin: .8rem 0;
+    font-size: 1.5rem;
+    color: #495e57
 }
 
 .footer p {
     margin: .4rem 0;
+    font-size: 1rem;
+    color: #495e57;
+
 }
 
 .footer .social {
     text-align: center;
+    white-space: nowrap;
 }
 
 .footer .icon {
     font-size: 2rem;
     margin: 2rem 3rem;
-    color: #5651e5;
+    color: #495e57;
 }
 
 @media screen and (max-width: 940px) {

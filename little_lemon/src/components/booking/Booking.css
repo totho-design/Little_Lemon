@@ -1,0 +1,128 @@
+.booking {
+    background-color: #050505;
+    color: #050505;
+    height: 80vh;
+    width: 100%;
+    opacity: 95%;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.booking:before {
+    content: '';
+    background: url('../../assets/restaurant.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    filter:blur(3px);
+    opacity: 20%;
+}
+
+.booking .guide {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left;
+    text-align: left;
+    max-width: 1024px;
+    margin: auto;
+    padding: 2rem;
+    white-space: nowrap;
+}
+
+.booking h1 {
+    font-size: 5.3331rem;
+    color: #f4ce14;
+    font-family: 'Markazi Text', serif;
+    font-weight: 500;
+    padding-top: 3rem;
+}
+
+.booking .booking-text {
+    font-size: 1.5rem;
+    color:#edefee;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    white-space: normal;
+    padding: 3rem 3rem 6rem 0;
+    text-align: left;
+}
+
+.search {
+    display: flex;
+    background-color: #fff;
+    color:#333333;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cccc;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.search input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+}
+
+.search label {
+    padding: 0 14px 0 8px;
+}
+
+.search .radio {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+    border: 1px solid #5651e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px) {
+    .booking {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .booking h1 {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .booking .booking-text {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .booking:before {
+        content: '';
+        background: url('../../assets/restaurant.jpg') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -10;
+        filter:blur(3px);
+        opacity: 20%;
+    }
+
+}
