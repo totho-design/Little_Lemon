@@ -1,0 +1,110 @@
+.about {
+    background-color: #edefee;
+    color: #495e57;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.about:before {
+    content: '';
+    background: url('../../assets/Mario-and-Adrian-A.jpg') no-repeat center center/cover;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    top: 30vh;
+    right: 30vw;
+    z-index: 1;
+}
+
+.about .history {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left;
+    text-align: left;
+    max-width: 1024px;
+    margin: auto;
+    padding: 2rem;
+    white-space: nowrap;
+}
+
+.about h1 {
+    font-size: 5.3331rem;
+    color: #495e57;
+    font-family: 'Markazi Text', serif;
+    font-weight: 500;
+}
+
+.about h2 {
+    font-size:3.3331rem;
+    color:#ee9972;
+    font-family: 'Markazi Text', serif;
+    font-weight: 500;
+}
+
+.about .about-text {
+    font-size: 1.5rem;
+    color:#495e57;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    white-space: normal;
+    padding: 3rem 3rem 6rem 0;
+    text-align: left;
+}
+
+.chefs {
+    width: 60%;
+    height: 55%;
+    object-fit: cover;
+    float: none;
+    margin-top: 15vh;
+    margin-left: 25vh;
+}
+
+@media screen and (max-width: 940px) {
+    .about {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        margin-bottom: 6rem;
+    }
+
+    .about h1 {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        padding-left: 1.5rem;
+    }
+
+    .about .about-text {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .about:before {
+        content: '';
+        background: url('../../assets/Mario-and-Adrian-A.jpg') no-repeat center center/cover;
+        height: 40%;
+        width: 30%;
+        position: absolute;
+        top: 30vh;
+        right: 25vw;
+        z-index: 1;
+    }
+
+    .chefs {
+        width: 70%;
+        height: 45%;
+        object-fit: cover;
+        float: none;
+        margin-top: 20vh;
+        margin-left: 8vh;
+    }
+
+}

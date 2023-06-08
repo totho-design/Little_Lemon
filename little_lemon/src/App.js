@@ -3,8 +3,8 @@ import Navbar from './components/navbar/Navbar'
 import Hero from "./components/hero/Hero";
 import Specials from "./components/specials/Specials"
 import Testimonials from "./components/testimonials/Testimonials"
-
-import Featured from "./components/featured/Featured"
+import About from "./components/about/About"
+import Booking from "./components/booking/Booking";
 import Footer from "./components/footer/Footer"
 
 function App() {
@@ -14,7 +14,10 @@ function App() {
       <Hero />
       <Specials />
       <Testimonials />
-      <Featured />
+      <About />
+      <Booking />
+
+
       <Footer />
     </>
   );
