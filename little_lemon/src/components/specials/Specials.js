@@ -8,7 +8,7 @@ import './Specials.css'
 
 const Specials = () => {
   return (
-    <div className='specials'>
+    <div className='specials' id='specials'>
       <div className='headline'>
         <h1>This Week Specials!</h1>
         <button className='btn ordr'>Order Online</button>

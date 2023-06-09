@@ -4,7 +4,7 @@ import Chefs from '../../assets/Mario-and-Adrian-B.jpg'
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className='history'>
             <div>
                 <h1>Little Lemon</h1>

@@ -51,51 +51,84 @@
     text-align: left;
 }
 
-.search {
+.booking h3 {
+    font-size: 1.5rem;
+    color:#f4ce14;
+    padding: 0.3rem 0.3rem;
+}
+
+.form-box {
+    margin: 6rem auto 3rem auto;
+    padding: 2rem;
+}
+
+.formfield {
+    border: none;
+}
+
+.Field {
     display: flex;
-    background-color: #fff;
+    background-color: #edefee;
     color:#333333;
     justify-content: space-between;
+    width: 25vw;
     align-items: center;
-    border: 1px solid #cccc;
-    padding: 4px;
+    padding: 8px;
+    margin: 16px;
     border-radius: 8px;
 }
 
-.search input[type=text] {
-    border: transparent;
-    background-color: transparent;
-    width: 400px;
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
+.Field input {
+    background: rgba(244, 206, 20, 0.5);
+    border: solid 1px #333333;
+    border-radius: 6px;
+    height: 2rem;
+    width: 15vw;
+    margin: 0 3px;
+    padding: 0 1rem;
+
 }
 
-.search input[type=text]:focus {
+.input[type=text] {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
+.input[type=email] {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    background: rgba(244, 206, 20, 0.5);
+}
+
+.Field input[type=text]:focus {
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+
+.Field input[type=text]:focus {
     outline: none;
 }
 
-.search label {
+label {
     padding: 0 14px 0 8px;
+    font-family: 'Karla' sans-serif;
+    font-size: 1.5rem;
 }
 
-.search .radio {
-    display: flex;
-    align-items: center;
-}
-
-.search button {
-    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
-    border: 1px solid #5651e5;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
+.formfield .btn {
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 
 @media screen and (max-width: 940px) {
     .booking {
-        height: 70vh;
+        height: 100vh;
         width: 100%;
         position: relative;
         margin-bottom: 0;
@@ -103,13 +136,25 @@
 
     .booking h1 {
         font-size: 2.5rem;
-        padding-left: 1.5rem;
+    }
+
+    .booking-description {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .booking .guide {
+        grid-template-columns: 1fr;
     }
 
     .booking .booking-text {
-        font-size: 1rem;
-        text-align: left;
-        padding-left: 1.5rem;
+        padding: 0;
+    }
+
+    .booking-form {
+        margin: 0 auto 2rem auto;
+        padding: 0 2rem;
     }
 
     .booking:before {
@@ -123,6 +168,11 @@
         z-index: -10;
         filter:blur(3px);
         opacity: 20%;
+    }
+
+    .Field {
+        height: 300vh;
+        width: 60vw;
     }
 
 }

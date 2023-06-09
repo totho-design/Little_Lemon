@@ -1,29 +1,17 @@
 import React from 'react'
 import './Booking.css'
+import Bookingform from './Bookingform'
 
 
 const Booking = () => {
   return (
-    <div className='booking'>
+    <div className='booking' id='booking'>
         <div className='guide'>
-            <div>
+            <div className='booking-description'>
                 <h1>Reserve a table</h1>
                 <p className='booking-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div>
-                <form className='booking-form'>
-                    <div>
-                        <input type='text' placeholder='Enter Keyword..'/>
-                    </div>
-                    <div className='radio'>
-                        <input type='radio' checked />
-                        <label>Buy</label>
-                        <input type='radio' />
-                        <label>Rent</label>
-                        <button type='submit'></button>
-                    </div>
-                </form>
-            </div>
+            <div><Bookingform /></div>
         </div>
     </div>
   )

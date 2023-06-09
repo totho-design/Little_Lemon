@@ -7,7 +7,9 @@ import About from "./components/about/About"
 import Booking from "./components/booking/Booking";
 import Footer from "./components/footer/Footer"
 
+
 function App() {
+ 
   return (
     <>
       <Navbar />
@@ -16,8 +18,6 @@ function App() {
       <Testimonials />
       <About />
       <Booking />
-
-
       <Footer />
     </>
   );
