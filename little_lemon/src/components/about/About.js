@@ -11,7 +11,7 @@ const About = () => {
                 <h2>Chicago</h2>
                 <p className='about-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div><img src={Chefs} className='chefs' alt='' /></div>
+            <div><img src={Chefs} className='chefs' alt='The chefs' /></div>
         </div>
     </div>
   )

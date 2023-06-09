@@ -20,7 +20,7 @@ const Testimonials = () => {
                         <h3>Rating:</h3>
                         <div><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star'/><AiFillStar className='star' /></div>
                     </div>
-                    <img src={Claire} className='prof' alt=''></img>
+                    <img src={Claire} className='prof' alt='uest'></img>
                     <h3>Claire Standish</h3>
                     <p>Very delicious food</p>
                 </div>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                         <h3>Rating:</h3>
                         <div><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /></div>
                     </div>
-                    <img src={Andrew} className='prof' alt=''></img>
+                    <img src={Andrew} className='prof' alt='uest'></img>
                     <h3>Andrew Clark</h3>
                     <p>It was great</p>
                 </div>
@@ -38,7 +38,7 @@ const Testimonials = () => {
                         <h3>Rating:</h3>
                         <div><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /><AiFillStar className='star' /></div>
                     </div>
-                    <img src={Allison}  className='prof' alt=''></img>
+                    <img src={Allison}  className='prof' alt='Guest'></img>
                     <h3>Allison Reynolds</h3>
                     <p>The Bruschetta was amazing</p>
                 </div>
